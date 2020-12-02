@@ -141,4 +141,5 @@ public class VirtualPet {
         String food = scanner.nextLine();
         return food;
     }
+
 }

@@ -2,12 +2,8 @@ import java.util.Scanner;
 
 public class VirtualPetApplication {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter pet name to create a pet: ");
-        String name = scanner.nextLine();
-        VirtualPet virtualPet = new VirtualPet(name, 20, 20,20,20,20);
+        VirtualPet virtualPet = new VirtualPet(enterPetName(), 20, 20,20,20,20);
         System.out.println(virtualPet.getName() + " created! Don't let its levels drop to 0! Good luck!");
-
         do {
             switch (virtualPet.displayLevels()) {
                 case 1:
@@ -30,6 +26,11 @@ public class VirtualPetApplication {
                     System.out.println("You have ignored the pet. They are not happy");
             }
         }while(virtualPet.tick());
-
+    }
+    public static String enterPetName(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter pet name to create a pet: ");
+        String name = scanner.nextLine();
+        return name;
     }
 }
