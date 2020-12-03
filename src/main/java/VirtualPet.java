@@ -145,4 +145,13 @@ public class VirtualPet {
         System.out.println("You have abandoned " + name + "!!");
         System.exit(0);
     }
+
+    public void ignoredPet() {
+        hungerLevel--;
+        thirstLevel--;
+        wasteLevel--;
+        boredomLevel--;
+        sicknessLevel--;
+        System.out.println("You have ignored " + name+ " They are not happy");
+    }
 }

@@ -26,7 +26,7 @@ public class VirtualPetApplication {
                     virtualPet.exitGame();
                     break;
                 default:
-                    System.out.println("You have ignored the pet. They are not happy");
+                    virtualPet.ignoredPet();
             }
         }while(virtualPet.tick());
     }
