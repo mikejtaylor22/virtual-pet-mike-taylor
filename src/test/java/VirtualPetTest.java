@@ -39,10 +39,11 @@ public class VirtualPetTest {
         int result = virtualPet.getSicknessLevel();
         Assert.assertEquals(20,result);
     }
-//    @Test
-//    public String shouldReturnCorrectFood(){
-//        VirtualPet virtualPet = new VirtualPet("Jim", 20, 20,20,20,20);
-//        String result = virtualPet.feed("apples");
-//        Assert.assertEquals("apples",result);
-//    }
+    @Test
+    public void shouldReturnTickTimerOfOne(){
+        VirtualPet virtualPet = new VirtualPet("Jim", 20, 20,20,20,20);
+        int result = virtualPet.getTickTime();
+        Assert.assertEquals(1,result);
+    }
+
 }

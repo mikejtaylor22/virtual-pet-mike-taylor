@@ -29,7 +29,6 @@ public class VirtualPet {
         boredomLevel--;
         sicknessLevel--;
 
-
         if(tickTime > age){
             System.out.println("Your pet went to heaven, died of old age");
             return false;
@@ -57,47 +56,18 @@ public class VirtualPet {
         return true;
     }
 
-
-    public String getName() {
-        return name;
-    }
-
-    public int getHungerLevel() {
-        return hungerLevel;
-    }
-
-    public int getThirstLevel() {
-        return thirstLevel;
-    }
-
-    public int getWasteLevel() {
-        return wasteLevel;
-    }
-
-    public int getBoredomLevel() {
-        return boredomLevel;
-    }
-
-    public int getSicknessLevel() {
-        return sicknessLevel;
-    }
-
-    public int getTickTime() {
-        return tickTime;
-    }
-
     public void water() {
         thirstLevel+=3;
         System.out.println("You have watered " + this.name);
     }
     public void feed(String food){
         if(food.toLowerCase().equals("apples")){
-            System.out.println("That is " + name + "'s favorite food! They are much less hungry");
+            System.out.println(food +" are " + name + "'s favorite food! They are much less hungry");
             hungerLevel+=12;
         } else {
             hungerLevel += 3;
             thirstLevel--;
-            System.out.println("You have fed " + this.name);
+            System.out.println("You have fed " + this.name + " " +food);
         }
     }
 
@@ -108,6 +78,7 @@ public class VirtualPet {
 
     public void play() {
         boredomLevel+=3;
+        sicknessLevel--;
         System.out.println("You have played with " + this.name);
     }
 
@@ -142,4 +113,30 @@ public class VirtualPet {
         return food;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getHungerLevel() {
+        return hungerLevel;
+    }
+
+    public int getThirstLevel() {
+        return thirstLevel;
+    }
+
+    public int getWasteLevel() {
+        return wasteLevel;
+    }
+
+    public int getBoredomLevel() {
+        return boredomLevel;
+    }
+
+    public int getSicknessLevel() {
+        return sicknessLevel;
+    }
+    public int getTickTime(){
+        return tickTime;
+    }
 }

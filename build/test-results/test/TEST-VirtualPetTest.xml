@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VirtualPetTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-02T22:30:52" hostname="DESKTOP-40N62ON" time="0.025">
+<testsuite name="VirtualPetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-03T19:19:19" hostname="DESKTOP-40N62ON" time="0.002">
   <properties/>
-  <testcase name="shouldReturnBoredomLevelOfTwenty" classname="VirtualPetTest" time="0.004"/>
-  <testcase name="shouldReturnHungerLevelOfTwenty" classname="VirtualPetTest" time="0.004"/>
-  <testcase name="shouldReturnCorrectName" classname="VirtualPetTest" time="0.002"/>
-  <testcase name="shouldReturnWasteLevelOfTwenty" classname="VirtualPetTest" time="0.001"/>
-  <testcase name="shouldReturnSicknessLevelOfTwenty" classname="VirtualPetTest" time="0.0"/>
-  <testcase name="shouldReturnThirstLevelOfTwenty" classname="VirtualPetTest" time="0.001"/>
+  <testcase name="shouldReturnTickTimerOfOne" classname="VirtualPetTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
