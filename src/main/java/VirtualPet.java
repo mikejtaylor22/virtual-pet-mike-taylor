@@ -29,7 +29,7 @@ public class VirtualPet {
         boredomLevel--;
         sicknessLevel--;
 
-        if((int)Math.random()*10+1 > 7){
+        if(Math.random()*10+1 > 7){
             System.out.println("**RANDOM EVENT OCCURS***");
             randomEvent();
         }
