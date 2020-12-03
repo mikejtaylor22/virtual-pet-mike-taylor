@@ -29,6 +29,12 @@ public class VirtualPet {
         boredomLevel--;
         sicknessLevel--;
 
+        if((int)Math.random()*10+1 > 7){
+            System.out.println("**RANDOM EVENT OCCURS***");
+            randomEvent();
+        }
+
+
         if(tickTime > age){
             System.out.println("Your pet went to heaven, died of old age");
             return false;
@@ -54,6 +60,41 @@ public class VirtualPet {
             return false;
         }
         return true;
+    }
+
+    private void randomEvent() {
+        int event = (int)(Math.random()*6) + 1;
+        switch(event){
+            case 1:
+                System.out.println(name + " has randomly stumbled into bees nest! Sickness increased!!");
+                sicknessLevel-=7;
+                break;
+            case 2:
+                System.out.println(name + " has made another pet friend. They are very happy");
+                boredomLevel +=7;
+                break;
+            case 3:
+                System.out.println(name + " decided to eat spoiled food! Beware of the hunger level!!");
+                hungerLevel -=6;
+                break;
+            case 4:
+                System.out.println(name + " decided not to sleep!!");
+                sicknessLevel -=7;
+                break;
+            case 5:
+                System.out.println(name + " is constipated! Beware of waste!");
+                wasteLevel-=7;
+                break;
+            case 6:
+                System.out.println(name + " was hit by a car!!! All levels are critical!");
+                sicknessLevel-=7;
+                wasteLevel-=7;
+                hungerLevel-=7;
+                boredomLevel-=7;
+                break;
+            default:
+                System.out.println(name + " is content");
+        }
     }
 
     public void water() {
