@@ -102,6 +102,7 @@ public class VirtualPet {
         System.out.println("3. Take  " + name + " to the bathroom");
         System.out.println("4.  Play With " + name);
         System.out.println("5. Give " + name + " medicine");
+        System.out.println("6. Exit Game");
         System.out.println("Select an option: ");
         int choice = scanner.nextInt();
         return choice;
@@ -138,5 +139,10 @@ public class VirtualPet {
     }
     public int getTickTime(){
         return tickTime;
+    }
+
+    public void exitGame() {
+        System.out.println("You have abandoned " + name + "!!");
+        System.exit(0);
     }
 }
