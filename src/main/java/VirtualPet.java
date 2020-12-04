@@ -48,15 +48,15 @@ public class VirtualPet {
             return false;
         }
         if(wasteLevel <=0){
-            System.out.println(this.name + " your pet died of constipation");
+            System.out.println(this.name + " has pet died of constipation");
             return false;
         }
         if(boredomLevel <= 0){
-            System.out.println(this.name + " your pet died of boredom");
+            System.out.println(this.name + " has pet died of boredom");
             return false;
         }
         if(sicknessLevel <= 0){
-            System.out.println(this.name + " your pet died of sickness");
+            System.out.println(this.name + " has pet died of sickness");
             return false;
         }
         return true;
@@ -86,11 +86,11 @@ public class VirtualPet {
                 wasteLevel-=7;
                 break;
             case 6:
-                System.out.println(name + " was hit by a car!!! All levels are critical!");
-                sicknessLevel-=7;
-                wasteLevel-=7;
-                hungerLevel-=7;
-                boredomLevel-=7;
+                System.out.println(name + " was hit by a car!!! They are hurting!!");
+                sicknessLevel-=8;
+                wasteLevel-=8;
+                hungerLevel-=8;
+                boredomLevel-=8;
                 break;
             default:
                 System.out.println(name + " is content");
